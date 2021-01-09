@@ -1,3 +1,60 @@
+* {
+	margin: 0;
+}
+
 body {
-	background: red;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+.header {
+	background: #2eb872;
+}
+.header__inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	font-size: 36px;
+	font-weight: 700;
+	color: #feffe4;
+}
+.logo__sublogo {
+	font-size: 24px;
+	font-weight: 400;
+	color: #feffe4;
+}
+.header__tel a {
+	font-size: 36px;
+	font-weight: 700;
+	color: #feffe4;
+	text-decoration: none;
+	transition: all .2s linear;
+}
+.header__tel a:hover {
+	text-decoration: underline;
+}
+.nav {
+
+}
+.nav__item {
+	font-size: 24px;
+	font-weight: 400;
+	color: #feffe4;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.nav__item:hover {
+	text-decoration: underline;
+}
+
+
+
+/* Common */
+.container  {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
