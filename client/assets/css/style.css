@@ -212,6 +212,75 @@ h1,h2,h3,h4,h5,h6 {
 	border: 1px solid #2eb872;
 }
 
+/* Feedback */
+.feedback {
+	margin-top: 80px;
+}
+.feedback__title {
+	color: #000;
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.feedback__inner {
+	max-width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.feedback__item {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+.feedback__ava {
+	background: #303030;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.feedback__text {
+	margin-left: 20px;
+}
+.feedback__name {
+	color: #303030;
+	font-size: 24px;
+}
+.feedback__feedback {
+	color: #303030;
+	font-size: 14px;
+}
+.feedback__btn__wrap {
+	text-align: center;
+	margin-top: 40px;
+}
+.feedback__btn {
+	text-decoration: none;
+	color: #feffe4;
+	font-size: 24px;
+	background: #2eb872;
+	border-radius: 5px;
+	padding: 5px 100px;
+	font-weight: 400;
+	margin-top: 15px;
+	transition: all .2s linear;
+	border: 1px solid #2eb872;
+}
+.feedback__btn:hover {
+	color: #2eb872;
+	background: #feffe4;
+	border: 1px solid #2eb872;
+}
+.footer {
+	margin-top: 80px;
+	padding: 20px;
+	color: #999;
+	background: #303030;
+}
+
 /* Common */
 .container  {
 	width: 100%;
