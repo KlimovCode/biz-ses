@@ -24,3 +24,23 @@
 		margin-top: 20px;
 	}
 }
+@media (max-width: 630px) {
+	.feedback__btn__wrap {
+		width: 100%;
+	}
+	.feedback__btn {
+		padding: 5px 10px;
+	}
+	.header__logo {
+		display: none;
+	}
+	.about__item {
+		margin-top: 20px;
+	}
+	.about__btn {
+		padding: 5px 10px;
+	}
+	.intro__btn {
+		right: 5%;
+	}
+}

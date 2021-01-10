@@ -1,5 +1,7 @@
 body {
 	width: 100%;
+	
+	min-width: 450px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
