@@ -44,3 +44,15 @@
 		right: 5%;
 	}
 }
+@media (max-height: 500px) {
+	.intro__logo {
+		font-size: 32px;
+		font-weight: 700;
+	}
+	.intro__sublogo {
+		display: none;
+	}
+	.intro__btn {
+		left: 5%;
+	}
+}
