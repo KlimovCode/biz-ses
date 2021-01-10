@@ -16,4 +16,11 @@
 	    background-size: cover;
 	    position: relative;
 	}
+	.about__description {
+		margin: 0 auto;
+		max-width: 90%;
+	}
+	.about__certificats {
+		margin-top: 20px;
+	}
 }
