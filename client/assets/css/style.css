@@ -16,6 +16,10 @@ h1,h2,h3,h4,h5,h6 {
 /* Header */
 .header {
 	background: #2eb872;
+	position: fixed;
+	width: 100%;
+	margin-top: -20px;
+	z-index: 10;
 }
 .header__inner {
 	display: flex;
@@ -75,6 +79,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 64px;
 	align-self: center;
 	font-weight: 400;
+	margin-top: 40px;
 }
 .intro__sublogo {
 	color: #fa4659;
