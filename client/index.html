@@ -6,10 +6,29 @@
 	<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<title>Дезинсекция вредителей</title>
 </head>
 <body>
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Хватит терпеть</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Позвони  по номеру  <br>
+	        <a href="tel: +74951234567" class="modal__tel">
+			+7 (495) 123-45-67
+			</a> <br>
+		и получи скидку!
+      </div>
+    </div>
+  </div>
+</div>
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -37,7 +56,70 @@
 			<div class="intro__inner">
 				<h1 class="intro__logo">Уничтожение вредителей</h1>
 				<h2 class="intro__sublogo">"СЭС-Защита"</h2>
-				<a href="" class="intro__btn">Заказать сейчас</a>
+				<a href="" class="intro__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать сейчас</a>
+			</div>
+		</div>
+	</div>
+	<div class="advantages">
+		<div class="container">
+			<div class="advantages__title">
+					Наши преимущества
+			</div>
+			<div class="advantages__inner">
+				<div class="advantages__item">
+					<div class="advantages__item__title">
+						<ion-icon name="star-outline"></ion-icon>
+						Качественное выполнение
+					</div>
+					<div class="advantages__item__text">
+						Мы знаем как уничтожить вредителей! Используем дорогие лицензированные припораты.
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item__title">
+						<ion-icon name="chatbubbles-outline"></ion-icon>
+						Контроль качества
+					</div>
+					<div class="advantages__item__text">
+						Наш менеджер будет следить за качеством выполнения работ на основе ваших отзывов.
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item__title">
+						<ion-icon name="stopwatch-outline"></ion-icon>
+						Помощь в пути
+					</div>
+					<div class="advantages__item__text">
+						Оперативнный выезд. Работа в удобное для вас время 24 ЧАСА.
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item__title">
+						<ion-icon name="people-outline"></ion-icon>
+						Мы лучшие
+					</div>
+					<div class="advantages__item__text">
+						Мы собрали команду опытных дезинфекторов с большим стажем.
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item__title">
+						<ion-icon name="gift-outline"></ion-icon>
+						Подарок от нас
+					</div>
+					<div class="advantages__item__text">
+						Мы поднимем вам настроение качеством работы и подарками.
+					</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item__title">
+						<ion-icon name="wifi-outline"></ion-icon>
+						Свяжитесь с нами сейчас
+					</div>
+					<div class="advantages__item__text">
+						И мы обговорим выгодные для Вас условия.
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -226,5 +308,8 @@
 			&copy; 2021 Все права защищены. Не является публичной офертой.
 		</div>
 	</footer>
+
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
