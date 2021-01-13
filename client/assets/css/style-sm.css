@@ -11,14 +11,24 @@
 	    position: relative;
 	}
 	.intro__logo {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 	.intro__sublogo {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 	.intro__btn {
 		font-size: 2em;
 		padding: 5px;
+	}
+
+	.services__item {
+		max-width: 90%;
+		padding: 5px;
+		margin-left: 10px;
+	}
+
+	.advantages__inner {
+		width: 80%;
 	}
 	.advantages__item__title {
 		font-size: 1.5em;
@@ -29,10 +39,19 @@
 	.about__item {
 		font-size: 0.8em;
 	}
-	.about__certificats__item {
-		max-width: 80%;
+	.about__certificats {
+		width: 80%;
+		margin: 20px auto 0;
 	}
-
+	.about__certificats__item {
+		/*max-width: 80%;*/
+	}
+/*
+	.modal {
+		width: 80%;
+		margin: 1em auto;
+		padding: 5px;
+	}*/
 	.modal-title {
 		font-size: 2em;
 	}
@@ -40,6 +59,7 @@
 		font-size: 1em;
 	}
 	.modal__tel {
-		font-size: 2em;
+		font-size: 1em;
+		font-weight: 700;
 	}
 }

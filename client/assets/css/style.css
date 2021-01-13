@@ -1,8 +1,8 @@
 body {
 	width: 100%;
-	
 	min-width: 450px;
     margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.6;
@@ -14,7 +14,6 @@ body {
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
-
 
 /* Header */
 .header {
@@ -328,9 +327,10 @@ ion-icon {
 
 /* Common */
 .container  {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+	/*width: 100%;*/
+	/*max-width: 1200px;*/
+	/*margin: 0 auto;*/
+	/*overflow: hidden;*/
 }
 .modal-title {
 	font-size: 32px;
