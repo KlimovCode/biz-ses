@@ -1,0 +1,45 @@
+@media (max-width: 450px) {
+	body {
+		min-width: 310px;
+	}
+	.header__tel a {
+		font-size: 2em;
+	}
+	.intro {
+		background: url("../img/intro.jpg") 25% 25% no-repeat;
+	    background-size: cover;
+	    position: relative;
+	}
+	.intro__logo {
+		font-size: 3em;
+	}
+	.intro__sublogo {
+		font-size: 3em;
+	}
+	.intro__btn {
+		font-size: 2em;
+		padding: 5px;
+	}
+	.advantages__item__title {
+		font-size: 1.5em;
+	}
+	.advantages__item__text {
+		font-size: 1em;
+	}
+	.about__item {
+		font-size: 0.8em;
+	}
+	.about__certificats__item {
+		max-width: 80%;
+	}
+
+	.modal-title {
+		font-size: 2em;
+	}
+	.modal-body {
+		font-size: 1em;
+	}
+	.modal__tel {
+		font-size: 2em;
+	}
+}
