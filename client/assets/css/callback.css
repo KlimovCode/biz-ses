@@ -12,7 +12,7 @@
         position: fixed;
         right: 3em;
         bottom: 3em;
-        z-index:999;
+        z-index:99999;
         transition:.3s;
         -webkit-animation:hoverWave linear 1s infinite;
         animation:hoverWave linear 1s infinite;
