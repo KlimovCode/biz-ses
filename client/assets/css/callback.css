@@ -29,11 +29,12 @@
 .callback-bt .text-call span {
     text-align: center;
     color:#38a3fd;
+    /*color: #fff;*/
     opacity: 0;
     font-size: 0;
         position:absolute;
-        right: 4px;
-        top: 22px;
+        right: 10px;
+        top: 20px;
     line-height: 14px;
         font-weight: 600;
     text-transform: uppercase;

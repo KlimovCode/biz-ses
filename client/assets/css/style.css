@@ -333,7 +333,7 @@ ion-icon {
 	/*margin: 0 auto;*/
 	/*overflow: hidden;*/
 }
-.modal-title {
+/*.modal-title {
 	font-size: 32px;
 }
 .modal-body {
@@ -348,9 +348,9 @@ ion-icon {
 }	
 .modal__tel:hover {
 	text-decoration: underline;
-}
+}*/
 /*кнопка звонка*/
-
+/*
 .callback-bt {
         background:#2eb872;
         border:2px solid #2eb872;
@@ -452,9 +452,9 @@ ion-icon {
         box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
 }
 }
-
+*/
 /* animations icon */
-
+/*
 @keyframes shake {
 0% {
     transform: rotateZ(0deg);
@@ -569,5 +569,5 @@ ion-icon {
         -ms-transform: rotateZ(0deg);
         -webkit-transform: rotateZ(0deg);
 }
-}
+}*/
 /* конец кнопки звонка */
