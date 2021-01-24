@@ -13,6 +13,16 @@
 	.intro__logo {
 		font-size: 2.5em;
 	}
+	.intro__text {
+		display: block;
+		font-size: 1.5em;
+		margin-top: 0.5em;
+		font-weight: 700;
+		text-shadow: 0px 0px 3px rgba(197,146,55,0.5);
+		background: -webkit-linear-gradient(#2eb872, #C59237);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 	.intro__sublogo {
 		font-size: 2.5em;
 	}

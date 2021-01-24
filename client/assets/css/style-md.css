@@ -16,6 +16,9 @@
 	    background-size: cover;
 	    position: relative;
 	}
+	.intro__text {
+		display: none;
+	}
 	.about__description {
 		margin: 0 auto;
 		max-width: 90%;
