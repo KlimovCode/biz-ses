@@ -1,0 +1,102 @@
+.services__inner div {
+    box-shadow:1px 1px 4px 1px rgba(46,184,114,1);
+}
+.backround-klesh {
+    position: relative;
+}
+.backround-klesh:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/klesh.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+.backround-dacha {
+    position: relative;
+}
+.backround-dacha:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/dacha.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+.backround-koroed {
+    position: relative;
+}
+.backround-koroed:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/koroed.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+.backround-plesen {
+    position: relative;
+}
+.backround-plesen:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/plesen.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+.backround-mish {
+    position: relative;
+}
+.backround-mish:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/mish.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+.backround-tarakan {
+    position: relative;
+}
+.backround-tarakan:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/tarakan.png);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
