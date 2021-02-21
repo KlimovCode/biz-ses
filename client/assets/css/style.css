@@ -580,3 +580,13 @@ ion-icon {
 }
 }*/
 /* конец кнопки звонка */
+
+.webmaster a {
+	float: right;
+	text-decoration: none;
+	color: #999;
+}
+.webmaster a:hover {
+	text-decoration: underline;
+	color: #ddd;
+}
