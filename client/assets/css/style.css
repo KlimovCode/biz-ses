@@ -105,6 +105,24 @@ h1,h2,h3,h4,h5,h6 {
 	border-radius: 5px;
 	padding: 5px;
 }
+.intro__text__update {
+	position: relative;
+	top: -40px;
+}
+@media (max-width: 1200px) {
+	.intro__text {
+		font-size: 2em;
+	}
+}
+@media (max-width: 450px) {
+	.intro__text {
+		font-size: 1.5em;
+	}
+	.intro__text__update {
+		position: relative;
+		top: -10px;
+	}
+}
 .intro__sublogo {
 	color: #fa4659;
 	font-size: 64px;
@@ -126,6 +144,11 @@ h1,h2,h3,h4,h5,h6 {
 	right: 30%;
 	top: 50%;
 	transition: all .2s linear;
+}
+@media (max-width: 360px) {
+	.intro__btn {
+		top: 60%;
+	}
 }
 .intro__btn:hover {
 	color: #2eb872;
