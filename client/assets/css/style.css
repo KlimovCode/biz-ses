@@ -232,6 +232,11 @@ ion-icon {
 	text-align: center;
 	margin-top: 10px;
 }
+.services__item__subtext {
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 1em;
+}
 .services__item__btn {
 	display: block;
 	text-decoration: none;
