@@ -14,4 +14,16 @@ $(document).ready(function(){
         }
         return false;
     };
+
+    let city = ''
+    let currentCity = getUrlParameter('utm')
+    if(currentCity) {
+        switch (currentCity) {
+            case 'hb':
+                city = 'Уничтожение вредителей в Хабаровском крае'
+                break
+            default: break
+        }
+        $('.intro__logo').text(city)
+    }
 });
