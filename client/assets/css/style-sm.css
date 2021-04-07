@@ -81,3 +81,8 @@
 		display: none;
 	}
 }
+@media (max-width: 450px) {
+	.intro__sublogo {
+		display: none;
+	}
+}
