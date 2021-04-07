@@ -1,10 +1,15 @@
-@media (max-width: 930px) {
-	.logo__sublogo {
-		display: none;
-	}
+@media (max-width: 1200px) {
 	.header__menu {
 		display: none;
 	}
+}
+@media (max-width: 1000px) {
+	.logo__sublogo {
+		display: none;
+	}
+}
+@media (max-width: 930px) {
+
 	.container {
 		width: 100%;
 		margin: 0;
@@ -27,15 +32,21 @@
 		margin-top: 20px;
 	}
 }
+@media (max-width: 800px) {
+	.header__inner {
+		display: flex;
+		flex-direction: column;
+	}
+	.intro__logo {
+		display: none;
+	}
+}
 @media (max-width: 630px) {
 	.feedback__btn__wrap {
 		width: 100%;
 	}
 	.feedback__btn {
 		padding: 5px 10px;
-	}
-	.header__logo {
-		display: none;
 	}
 	.about__item {
 		margin-top: 20px;

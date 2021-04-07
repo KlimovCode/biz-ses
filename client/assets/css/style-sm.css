@@ -23,6 +23,9 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	.intro__text--sub--mt20 {
+		margin-top: 90px;
+	}
 	.intro__sublogo {
 		font-size: 2.5em;
 	}
@@ -71,5 +74,10 @@
 	.modal__tel {
 		font-size: 1em;
 		font-weight: 700;
+	}
+}
+@media (max-width: 360px) {
+	.header__tel {
+		display: none;
 	}
 }
