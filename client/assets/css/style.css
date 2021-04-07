@@ -157,6 +157,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Advantages */
+.advantages {
+	margin-top: 40px;
+}
 .advantages__title {
 	color: #000;
 	font-weight: 700;
@@ -190,7 +193,7 @@ ion-icon {
 
 /* Services */
 .services {
-	margin-top: 80px;
+	margin-top: 20px;
 }
 .services__inner {
 	display: flex;
