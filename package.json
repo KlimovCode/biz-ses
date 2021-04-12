@@ -1,0 +1,32 @@
+{
+  "name": "biz-ses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "tw:prod": "cross-env NODE_ENV=production postcss build ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "tw:watch": "onchange \"tailwind.config.js\" \"src/**/*.css\" -- npm run tw:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KlimovCode/biz-ses.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KlimovCode/biz-ses/issues"
+  },
+  "homepage": "https://github.com/KlimovCode/biz-ses#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.0",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1"
+  }
+}

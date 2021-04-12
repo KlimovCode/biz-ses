@@ -1,7 +1,0 @@
-.idea
-node_modules/
-.gulp-scss-cache/
-
-app/dist/
-app/img/dest
-app/css
