@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .code {
-    @apply text-cwc-red;
+    @apply text-cwc-dark;
+    @apply text-cwc-primary;
 }
