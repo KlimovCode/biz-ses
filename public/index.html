@@ -3,7 +3,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Дезинсекция вредителей</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/callback.css" />
+    <link rel="stylesheet" href="css/modal.css" />
 </head>
 <body>
 <!-- Yandex.Metrika counter -->
@@ -21,6 +25,46 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/74255302" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<!-- Call back -->
+<div type="button" class="callback-bt">
+    <div class="text-call">
+        <i class="fa fa-phone"></i>
+        <span data-bs-toggle="modal" data-bs-target="#exampleModal">Хватит<br>терпеть</span>
+    </div>
+</div>
+<!-- WhatsApp -->
+<div type="button" class="callback-bt-whatsapp">
+    <div class="text-call-whatsapp">
+        <i class="fa fa-whatsapp"></i>
+        <a href="https://wa.me/79010803208?text=Хочу%20заказать%20ваши%20услуги"><span class="whatsapp">Напиши<br>WhatsApp</span></a>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Хватит терпеть</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Позвони  по номеру  <br>
+                <a href="tel:+79010803208" class="modal__tel">
+                    +7 (901) 080-32-08
+                </a> <br>
+                и получи скидку! <br>
+                <hr>
+                Укажите ваш номер телефона <br>
+                и мы перезвоним вам сами<br>
+                <form action="mail.php" method="POST" class="modal__form">
+                    <input type="text" name="name" placeholder="Ваше имя" class="modal__form__name">
+                    <input type="text" name="phone" placeholder="Ваш телефон" class="modal__form__phone">
+                    <button type="submit" class="modal__form__btn">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="intro md:container md:mx-auto px-4 md:flex" style="min-width: 320px">
     <div class="intro__description  md:w-2/5 w-full py-2">
@@ -101,22 +145,22 @@
                     <td class="w-2/5 p-2">Барьерная защита от возможного проникновения насекомых из соседних помещений</td>
                 </tr>
                 <tr class="hover:bg-cwc-primary hover:text-white">
-                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-4">1 комнатная квартира</td>
+                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-2">1 комнатная квартира</td>
                     <td class="text-center">От 1500 руб</td>
                     <td rowspan="5" class="align-middle text-center">от 500 руб.</td>
                 </tr>
                 <tr class="hover:bg-cwc-primary hover:text-white">
-                    <td class="bg-cwc-dark text-white p-2 border-t border-white">2 комнатная квартира</td>
+                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-2">2 комнатная квартира</td>
                     <td class="text-center">От 1800 руб</td>
                     <td></td>
                 </tr>
                 <tr class="hover:bg-cwc-primary hover:text-white">
-                    <td class="bg-cwc-dark text-white p-2 border-t border-white">3 комнатная квартира</td>
+                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-2">3 комнатная квартира</td>
                     <td class="text-center">От 2000 руб</td>
                     <td></td>
                 </tr>
                 <tr class="hover:bg-cwc-primary hover:text-white">
-                    <td class="bg-cwc-dark text-white p-2 border-t border-white">МОП санузел, кухня, коридор</td>
+                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-2">МОП санузел, кухня, коридор</td>
                     <td class="text-center">От 1000 руб</td>
                     <td></td>
                 </tr>
@@ -126,17 +170,17 @@
         <div class="price__table mt-2">
             <table class="text-xs sm:text-base w-full">
                 <tr class="hover:bg-cwc-primary hover:text-white">
-                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-4">Насекомые</td>
+                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-2">Насекомые</td>
                     <td class="text-center">Мотоопрыскиватель</td>
                     <td class="text-center">6 соток - 5400 рублей</td>
                 </tr>
                 <tr class="hover:bg-cwc-primary hover:text-white">
-                    <td class="bg-cwc-dark text-white p-2 border-t border-white">Грызуны</td>
+                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-2">Грызуны</td>
                     <td class="text-center">Генератор тумана</td>
                     <td class="text-center">6 соток - 5200 рублей</td>
                 </tr>
                 <tr class="hover:bg-cwc-primary hover:text-white">
-                    <td class="bg-cwc-dark text-white p-2 border-t border-white">Сорняки</td>
+                    <td class="bg-cwc-dark text-white p-2 border-t border-white py-2">Сорняки</td>
                     <td class="text-center">Мотоопрыскиватель</td>
                     <td class="text-center">6 соток - 5600 рублей</td>
                 </tr>
@@ -223,5 +267,8 @@
 <!--</main>-->
 
 <!--<footer></footer>-->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
