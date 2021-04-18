@@ -71,7 +71,7 @@
 <!-- mobile menu -->
 <div x-data="{ menu: false }" class="relative right-0 top-0 block md:hidden">
     <button @click="menu = !menu"
-            class="z-20 fixed right-8 top-8 px-1 py-1 bg-green-500 md:hover:bg-green-200  transform duration-500 ease-in-out md:hover:scale-110 motion-reduce:transform-none text-white m-2 focus:outline-none" >
+            class="z-20 fixed right-1 top-1 px-3 py-3 bg-green-500 md:hover:bg-green-200  transform duration-500 ease-in-out md:hover:scale-110 motion-reduce:transform-none text-white m-2 focus:outline-none" >
         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path x-show="!menu" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
             <path x-show="menu"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -359,6 +359,8 @@
         </div>
         <div class="info__spec2">
             <span class="text-2xl">Заказ в день обращения скидка 20%</span>
+            <span class="text-2xl">ВЫЗОВ МАСТЕРА В ДЕНЬ ОБРАЩЕНИЯ  СКИДКА 20 %</span>
+            <span class="text-2xl">обработка квартир от 1000 рублей!</span>
         </div>
         <div class="info__phone text-white mt-8">
             <a href="tel: +79010803208"
@@ -397,7 +399,7 @@
 <section class="services my-8">
     <div class="container px-4 mx-auto max-w-screen-lg">
         <div class="services__wrap flex flex-wrap justify-around">
-            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalklesh')">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:border-cwc-primary cursor-pointer" onclick="openModal('modalklesh')">
                 <div class="card__img">
                     <img src="img/service-klesh.jpg" alt="" class="h-48 w-full">
                 </div>
@@ -407,8 +409,15 @@
                 <div class="card__description p-2">
                     Обработка дачных участков от клопов от 1000
                 </div>
+                <div class="card__button text-center my-2">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="text-white font-semibold py-2 px-4 border border-white rounded mr-2 w-4/5 hover:bg-cwc-primary"
+                        onclick="stopPropagation(event)">
+                        Заказать
+                    </button>
+                </div>
             </div>
-            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modaltarakan')">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:border-cwc-primary cursor-pointer" onclick="openModal('modaltarakan')">
                 <div class="card__img">
                     <img src="img/service-tarakan.jpg" alt="" class="h-48 w-full">
                 </div>
@@ -418,8 +427,15 @@
                 <div class="card__description p-2">
                     Комната от 1200 + барьерная обработка
                 </div>
+                <div class="card__button text-center my-2">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="text-white font-semibold py-2 px-4 border border-white rounded mr-2 w-4/5 hover:bg-cwc-primary"
+                            onclick="stopPropagation(event)">
+                        Заказать
+                    </button>
+                </div>
             </div>
-            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalklop')">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:border-cwc-primary cursor-pointer" onclick="openModal('modalklop')">
                 <div class="card__img">
                     <img src="img/service-klop.jpg" alt="" class="h-48 w-full">
                 </div>
@@ -429,8 +445,15 @@
                 <div class="card__description p-2">
                     Комната от 1500 + барьерная обработка
                 </div>
+                <div class="card__button text-center my-2">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="text-white font-semibold py-2 px-4 border border-white rounded mr-2 w-4/5 hover:bg-cwc-primary"
+                            onclick="stopPropagation(event)">
+                        Заказать
+                    </button>
+                </div>
             </div>
-            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalmish')">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:border-cwc-primary cursor-pointer" onclick="openModal('modalmish')">
                 <div class="card__img">
                     <img src="img/service-mish.jpg" alt="" class="h-48 w-full">
                 </div>
@@ -440,8 +463,15 @@
                 <div class="card__description p-2">
                     Избавим от грызунов от 2000 + ловушки
                 </div>
+                <div class="card__button text-center my-2">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="text-white font-semibold py-2 px-4 border border-white rounded mr-2 w-4/5 hover:bg-cwc-primary"
+                            onclick="stopPropagation(event)">
+                        Заказать
+                    </button>
+                </div>
             </div>
-            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalplesen')">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:border-cwc-primary cursor-pointer" onclick="openModal('modalplesen')">
                 <div class="card__img">
                     <img src="img/service-plesen.jpg" alt="" class="h-48 w-full">
                 </div>
@@ -451,16 +481,30 @@
                 <div class="card__description p-2">
                     Мы проведем полную обработку всего
                 </div>
+                <div class="card__button text-center my-2">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="text-white font-semibold py-2 px-4 border border-white rounded mr-2 w-4/5 hover:bg-cwc-primary"
+                            onclick="stopPropagation(event)">
+                        Заказать
+                    </button>
+                </div>
             </div>
-            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalbakter')">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:border-cwc-primary cursor-pointer" onclick="openModal('modalbakter')">
                 <div class="card__img">
                     <img src="img/service-bakter.jpg" alt="" class="h-48 w-full">
                 </div>
                 <div class="card__title p-2 text-xl">
-                    Антибактериальная обработка
+                    Антибактериальная
                 </div>
                 <div class="card__description p-2">
                     Ваша безопасность от 1000 рублей
+                </div>
+                <div class="card__button text-center my-2">
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="text-white font-semibold py-2 px-4 border border-white rounded mr-2 w-4/5 hover:bg-cwc-primary"
+                            onclick="stopPropagation(event)">
+                        Заказать
+                    </button>
                 </div>
             </div>
         </div>
@@ -575,5 +619,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="js/modal.js"></script>
+<script src="js/fixPropagation.js"></script>
 </body>
 </html>

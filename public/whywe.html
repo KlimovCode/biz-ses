@@ -70,7 +70,7 @@
 <!-- mobile menu -->
 <div x-data="{ menu: false }" class="relative right-0 top-0 block md:hidden">
     <button @click="menu = !menu"
-            class="z-20 fixed right-8 top-8 px-1 py-1 bg-green-500 md:hover:bg-green-200  transform duration-500 ease-in-out md:hover:scale-110 motion-reduce:transform-none text-white m-2 focus:outline-none" >
+            class="z-20 fixed right-1 top-1 px-3 py-3 bg-green-500 md:hover:bg-green-200  transform duration-500 ease-in-out md:hover:scale-110 motion-reduce:transform-none text-white m-2 focus:outline-none" >
         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path x-show="!menu" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
             <path x-show="menu"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -188,11 +188,11 @@
             <img src="img/man.jpg" alt="" class="w-2/5 float-left m-4">
             Опыт наших специалистов растет с каждым разом, наше оборудование оснащено всем самым передовым (генератор горячего и холодного тумана), благодаря чему мы успешно справляемся с вашей проблемой и уничтожаем насекомых любого вида и грызунов, а также с обработкой организаций и квартир. В нашем арсенале как импортные, так и российские препараты, которые отлично справляются со своей задачей по уничтожению вредителей.
         </p>
-        <p>
+        <p class="text-xl font-bold"><br><br>
             Пенсионерам скидка -10% <br>
             колективная обработка-30% <br>
             в квартире обитает 2 вида насекомых-скидка-30% <br>
-            вызов мастера в день обращения скидка 20% <br>
+            вызов мастера в день обращения скидка 20% <br><br>
             Позвоните,наш менеджер бесплатно проконсультирует Вас <br>
         </p>
         <p class="mt-2 clear-both">
