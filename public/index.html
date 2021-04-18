@@ -5,6 +5,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Дезинсекция вредителей</title>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/tailwind.css?v=1" />
@@ -95,6 +96,229 @@
         <li class="text-lg py-2"><a class="px-2 hover:text-gray-200 cursor-pointer" @click="menu = !menu">Закрыть меню</a></li>
     </ul>
 </div>
+<!-- modal tarakan -->
+<dialog id="modaltarakan" class="bg-transparent z-0 relative w-screen h-screen">
+    <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white flex rounded-lg w-4/5 relative">
+            <div class="flex flex-col items-start">
+                <div class="p-7 flex items-center w-full">
+                    <div class="text-gray-900 font-bold text-lg">Избавим от тараканов</div>
+                    <svg onclick="modalClose('modaltarakan')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+                    </svg>
+                </div>
+
+                <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+                    <p>
+                        Мы используем профессиональные дезсредства, а наши специалисты обладают большим опытом работы. Это позволяет нам гарантировать:
+                    </p>
+                    <p>
+                        полное уничтожение популяции насекомых-вредителей;
+                        защиту от их появление в течение гарантийного срока.
+                    </p>
+                    <p>
+                        Гарантия на уничтожение домашних тараканов составляет 3 года. Если в течение этого периода насекомые вернутся, проведем повторную дезинсекцию бесплатно. Наши обязательства закреплены в договоре и исполняются в полном объеме.
+                    </p>
+                </div>
+
+                <div class="p-7 flex justify-end items-center w-full">
+<!--                    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">-->
+<!--                        Ok-->
+<!--                    </button>-->
+                    <button type="button" onclick="modalClose('modaltarakan')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<!-- modal klesh -->
+<dialog id="modalklesh" class="bg-transparent z-0 relative w-screen h-screen">
+    <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white flex rounded-lg w-4/5 relative">
+            <div class="flex flex-col items-start">
+                <div class="p-7 flex items-center w-full">
+                    <div class="text-gray-900 font-bold text-lg">Устраним клещей</div>
+                    <svg onclick="modalClose('modalklesh')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+                    </svg>
+                </div>
+
+                <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+                    <p>
+                        Мы осуществляем обработку загородных участков от иксодовых клещей.
+                    </p>
+                    <p>
+                        Гарантируем полное уничтожение клещей на весь сезон!
+                    </p>
+                    <p>
+                        Борьба с энцефалитными клещами проводится с использованием профессионального оборудования и сертифицированных химических препаратов (циперметрин, лямбда-цигалотрин, тетрамитрин, имидоклоприд и хлорпирифос), которые мы закупаем напрямую от лучших производителей.
+                    </p>
+                </div>
+
+                <div class="p-7 flex justify-end items-center w-full">
+                    <!--                    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">-->
+                    <!--                        Ok-->
+                    <!--                    </button>-->
+                    <button type="button" onclick="modalClose('modalklesh')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<!-- modal klop -->
+<dialog id="modalklop" class="bg-transparent z-0 relative w-screen h-screen">
+    <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white flex rounded-lg w-4/5 relative">
+            <div class="flex flex-col items-start">
+                <div class="p-7 flex items-center w-full">
+                    <div class="text-gray-900 font-bold text-lg">Избавим от клопов</div>
+                    <svg onclick="modalClose('modalklop')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+                    </svg>
+                </div>
+
+                <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+                    <p>
+                        Клопы – опасные синантропные насекомые.
+                    </p>
+                    <p>
+                        Столкнуться с клопами может каждый!
+                        Профессиональное уничтожение клопов – необходимая мера.
+                    </p>
+                    <p>
+                        Избавиться от них другим способом невозможно.
+                        Гарантируем уничтожение клопов после первой обработки помещений.
+                        Повторная дезинсекция не потребуется.
+                    </p>
+                </div>
+
+                <div class="p-7 flex justify-end items-center w-full">
+                    <!--                    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">-->
+                    <!--                        Ok-->
+                    <!--                    </button>-->
+                    <button type="button" onclick="modalClose('modalklop')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<!-- modal mish -->
+<dialog id="modalmish" class="bg-transparent z-0 relative w-screen h-screen">
+    <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white flex rounded-lg w-4/5 relative">
+            <div class="flex flex-col items-start">
+                <div class="p-7 flex items-center w-full">
+                    <div class="text-gray-900 font-bold text-lg">Дератация грызунов</div>
+                    <svg onclick="modalClose('modalmish')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+                    </svg>
+                </div>
+
+                <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+                    <p>
+                        Выявление и уточнение численности колонии.
+                    </p>
+                    <p>
+                        проведение технических мероприятий;
+                        непосредственное истребление;
+                        организация долгосрочных приманок с отравой;
+                    </p>
+                    <p>
+                        Профессиональное уничтожение крыс в  осуществляется посредством:
+                        механических ловушек клеевого, капканного ипа;
+                        установки УЗ излучателей и электрических барьеров;
+                        применения безопасных для человека родентицидов (ядов хронического и смешанного действия);
+                        применения репеллентов после истребления. Профилактика возобновления колонии.
+                    </p>
+                </div>
+
+                <div class="p-7 flex justify-end items-center w-full">
+                    <!--                    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">-->
+                    <!--                        Ok-->
+                    <!--                    </button>-->
+                    <button type="button" onclick="modalClose('modalmish')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<!-- modal plesen -->
+<dialog id="modalplesen" class="bg-transparent z-0 relative w-screen h-screen">
+    <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white flex rounded-lg w-4/5 relative">
+            <div class="flex flex-col items-start">
+                <div class="p-7 flex items-center w-full">
+                    <div class="text-gray-900 font-bold text-lg">Избавим от плесени</div>
+                    <svg onclick="modalClose('modalplesen')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+                    </svg>
+                </div>
+
+                <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+                    <p>
+                        Мы осуществляем обработку загородных участков от иксодовых клещей.
+                    </p>
+                    <p>
+                        Гарантируем полное уничтожение клещей на весь сезон!
+                    </p>
+                    <p>
+                        Борьба с энцефалитными клещами проводится с использованием профессионального оборудования и сертифицированных химических препаратов (циперметрин, лямбда-цигалотрин, тетрамитрин, имидоклоприд и хлорпирифос), которые мы закупаем напрямую от лучших производителей.
+                    </p>
+                </div>
+
+                <div class="p-7 flex justify-end items-center w-full">
+                    <!--                    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">-->
+                    <!--                        Ok-->
+                    <!--                    </button>-->
+                    <button type="button" onclick="modalClose('modalplesen')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
+<!-- modal bakter -->
+<dialog id="modalbakter" class="bg-transparent z-0 relative w-screen h-screen">
+    <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div class="bg-white flex rounded-lg w-4/5 relative">
+            <div class="flex flex-col items-start">
+                <div class="p-7 flex items-center w-full">
+                    <div class="text-gray-900 font-bold text-lg">Антибактериальная обработка</div>
+                    <svg onclick="modalClose('modalbakter')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+                    </svg>
+                </div>
+
+                <div class="px-7 overflow-x-hidden overflow-y-auto" style="max-height: 40vh;">
+                    <p>
+                        Проведение очистки поверхностей посредством аэрозольного нанесения эффективно.
+                    </p>
+                    <p>
+                        Активное вещество распыляется на пораженную поверхность. Препарат с фунгицидной активностью глубоко проникает внутрь конструкций и полностью уничтожает колонию.
+                    </p>
+                </div>
+
+                <div class="p-7 flex justify-end items-center w-full">
+                    <!--                    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3">-->
+                    <!--                        Ok-->
+                    <!--                    </button>-->
+                    <button type="button" onclick="modalClose('modalbakter')" class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</dialog>
 
 <section class="intro md:container md:mx-auto px-4 md:flex" style="min-width: 320px">
     <div class="intro__description  md:w-2/5 w-full py-2">
@@ -167,62 +391,62 @@
 <section class="services my-8">
     <div class="container px-4 mx-auto">
         <div class="services__wrap flex flex-wrap justify-between">
-            <div class="card w-64 border-4 border-blue-300 mt-2 bg-blue-300">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalklesh')">
                 <div class="card__img">
                     <img src="img/service-klesh.jpg" alt="" class="h-48 w-full">
                 </div>
                 <div class="card__title p-2 text-xl">
                     Устраним клещей
                 </div>
-                <div class="card__description bg-blue-300 p-2">
+                <div class="card__description p-2">
                     Обработка дачных участков от клопов от 1000
                 </div>
             </div>
-            <div class="card w-64 border-4 border-blue-300 mt-2 bg-blue-300">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modaltarakan')">
                 <div class="card__img">
                     <img src="img/service-tarakan.jpg" alt="" class="h-48 w-full">
                 </div>
                 <div class="card__title p-2 text-xl">
                     Избавим от тараканов
                 </div>
-                <div class="card__description bg-blue-300 p-2">
+                <div class="card__description p-2">
                     Комната от 1200 + барьерная обработка
                 </div>
             </div>
-            <div class="card w-64 border-4 border-blue-300 mt-2 bg-blue-300">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalklop')">
                 <div class="card__img">
                     <img src="img/service-klop.jpg" alt="" class="h-48 w-full">
                 </div>
                 <div class="card__title p-2 text-xl">
                     Избавим от клопов
                 </div>
-                <div class="card__description bg-blue-300 p-2">
+                <div class="card__description p-2">
                     Комната от 1500 + барьерная обработка
                 </div>
             </div>
-            <div class="card w-64 border-4 border-blue-300 mt-2 bg-blue-300">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalmish')">
                 <div class="card__img">
                     <img src="img/service-mish.jpg" alt="" class="h-48 w-full">
                 </div>
                 <div class="card__title p-2 text-xl">
                     Дератация грызунов
                 </div>
-                <div class="card__description bg-blue-300 p-2">
+                <div class="card__description p-2">
                     Избавим от грызунов от 2000 + ловушки
                 </div>
             </div>
-            <div class="card w-64 border-4 border-blue-300 mt-2 card w-64 border-4 border-blue-300 mt-2 bg-blue-300">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalplesen')">
                 <div class="card__img">
                     <img src="img/service-plesen.jpg" alt="" class="h-48 w-full">
                 </div>
                 <div class="card__title p-2 text-xl">
                     Избавим от плесени
                 </div>
-                <div class="card__description bg-blue-300 p-2">
+                <div class="card__description p-2">
                     Мы проведем полную обработку всего
                 </div>
             </div>
-            <div class="card w-64 border-4 border-blue-300 mt-2 card w-64  border-4 border-blue-300 mt-2 bg-blue-300">
+            <div class="card w-64 border-4 border-cwc-dark mt-2 bg-cwc-dark text-white hover:bg-cwc-primary cursor-pointer" onclick="openModal('modalbakter')">
                 <div class="card__img">
                     <img src="img/service-bakter.jpg" alt="" class="h-48 w-full">
                 </div>
@@ -302,5 +526,6 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>
